@@ -14,6 +14,8 @@
 		633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633646C71B8C657400FF45E2 /* LaunchScreen.xib */; };
 		CD0FB3E021BDC4AD00FB40D9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FB3DF21BDC4AD00FB40D9 /* Question.swift */; };
 		CD0FB3E221BDC82400FB40D9 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FB3E121BDC82400FB40D9 /* QuestionBank.swift */; };
+		CDD6B5C5231D8B9900432FC6 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6B5C2231D8B9800432FC6 /* ProgressHUD.m */; };
+		CDD6B5C6231D8B9900432FC6 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDD6B5C3231D8B9800432FC6 /* ProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		633646C81B8C657400FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CD0FB3DF21BDC4AD00FB40D9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CD0FB3E121BDC82400FB40D9 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		CDD6B5C1231D8B9700432FC6 /* Quizzler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzler-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDD6B5C2231D8B9800432FC6 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		CDD6B5C3231D8B9800432FC6 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		CDD6B5C4231D8B9900432FC6 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +75,12 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDD6B5C3231D8B9800432FC6 /* ProgressHUD.bundle */,
+				CDD6B5C4231D8B9900432FC6 /* ProgressHUD.h */,
+				CDD6B5C2231D8B9800432FC6 /* ProgressHUD.m */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
+				CDD6B5C1231D8B9700432FC6 /* Quizzler-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD6B5C6231D8B9900432FC6 /* ProgressHUD.bundle in Resources */,
 				633646C41B8C657400FF45E2 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
@@ -177,6 +188,7 @@
 			files = (
 				CD0FB3E021BDC4AD00FB40D9 /* Question.swift in Sources */,
 				CD0FB3E221BDC82400FB40D9 /* QuestionBank.swift in Sources */,
+				CDD6B5C5231D8B9900432FC6 /* ProgressHUD.m in Sources */,
 				633646C11B8C657400FF45E2 /* ViewController.swift in Sources */,
 				633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */,
 			);
@@ -317,7 +329,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerrygerou.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
@@ -334,7 +346,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerrygerou.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 			};
